@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chad's To Do List</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <form method="post">
+    <input id="to-do-textfield" name="input" type="text" placeholder="add to-do item">
+    <input type="submit" name="submit" value="Add Todo">
+  </form>
+    <div class="to-do-list">
+      <ul>
+        {{#todos}}
+        {{#.}}
+        <li>{{.}}</li>
+        {{/.}}
+        {{/todos}}
+      </ul>
+    </div>
+
+  </body>
+</html>
